@@ -8,3 +8,9 @@ h2 {
 ul {
   list-style-type: square !important;
 }
+.largeText {
+  font-size: 4em;
+}
+.blueBorder {
+  border: 3px solid blue;
+}
