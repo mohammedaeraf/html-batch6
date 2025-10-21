@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Border Radius Transition</title>
+    <style>
+      button {
+        background-color: #009688;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        cursor: pointer;
+        border-radius: 0px;
+        transition: border-radius 0.7s ease, background-color 0.7s ease;
+      }
+      button:hover {
+        border-radius: 50px;
+        background-color: #004d40;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hover Me</button>
+  </body>
+</html>
