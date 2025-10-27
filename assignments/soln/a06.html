@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Layout Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+      }
+
+      .header {
+        background-color: #0077b6;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 24px;
+      }
+
+      .container {
+        background-color: white;
+        width: 90%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        overflow: auto; /* ensures container wraps floated boxes */
+      }
+
+      .box {
+        float: left;
+        width: 40%;
+        margin: 2%;
+        background-color: #caf0f8;
+        min-height: 150px; /* ensures box has a minimum height */
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .footer {
+        clear: both; /* forces footer below floated elements */
+        background-color: #023e8a;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">🌴 My Travel Blog</div>
+
+    <div class="container">
+      <div class="box">
+        <h3>Travel Tips</h3>
+        <p>
+          Always pack light, carry a water bottle, and keep a copy of important
+          documents while traveling. Stay flexible and open to local
+          experiences.
+        </p>
+      </div>
+
+      <div class="box">
+        <h3>Dream Destinations</h3>
+        <p>
+          Explore places like Paris, Bali, and New York. Each destination offers
+          a unique blend of culture, food, and unforgettable experiences.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">© 2025 My Travel Blog</div>
+  </body>
+</html>
