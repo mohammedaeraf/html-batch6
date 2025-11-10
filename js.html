@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Intro</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+    </style>
+    <script>
+      function changeColor() {
+        let topHeading = document.getElementById("topHeading");
+
+        topHeading.style.color = "red";
+        topHeading.style.textAlign = "center";
+        topHeading.style.fontFamily = "Arial";
+        topHeading.style.fontSize = "40px";
+        topHeading.textContent = "JavaScript changed the Content!";
+      }
+
+      function changeImage() {
+        let myImg = document.getElementById("myImg");
+        myImg.src = "assets/img/tokyo.jpg";
+
+        let imgTitle = document.getElementById("imgTitle");
+        imgTitle.textContent = "Tokyo";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="topHeading">JS Intro</h1>
+    <h2>JS can change style or content of any control on the page</h2>
+    <div>
+      <button onclick="changeColor()">Change Heading Color</button>
+    </div>
+    <div style="margin-top: 30px">
+      <h2 id="imgTitle">Paris</h2>
+      <img src="assets/img/paris.jpg" alt="" width="300px" id="myImg" />
+    </div>
+    <button onclick="changeImage()">Change Image</button>
+  </body>
+</html>
